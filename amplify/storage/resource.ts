@@ -1,7 +1,7 @@
 import { defineStorage } from '@aws-amplify/backend';
 
 export const storage = defineStorage({
-  name: 'realty-temp-uploads',
+  name: 'file-storage',
   access: (allow) => ({
     'public/*': [
       allow.guest.to(['read']),
